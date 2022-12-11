@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en pt">
+<head>
+  	<style>
+      .bg-gray-100 {
+    --tw-bg-opacity:1;
+    background-color:rgba(247,250,252,var(--tw-bg-opacity))
+   }
+
+.block {
+    display:block
+   }
+
+.clearfix {
+    display:flow-root;
+    padding: 14px;
+    margin-top: 14px;
+   }
+
+.text-xl {
+    line-height:1.75rem;
+    font-size:1.25rem
+   }
+ 
+.input-help {
+ --tw-text-opacity:1;
+ color:rgba(113,128,150,var(--tw-text-opacity));
+ font: size 0.2em;
+ line-height: 0.2rem
+}
+.form .feedback,
+form .feedback {
+ font-size:.75rem;
+ line-height:1rem
+}
+.input {
+    --tw-border-opacity:1;
+    --tw-bg-opacity:1;
+    --tw-text-opacity:1;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background-color:rgba(237,242,247,var(--tw-bg-opacity));
+    border-color:rgba(226,232,240,var(--tw-border-opacity));
+    border-radius:.25rem;
+    border-width:1px;
+    color:rgba(74,85,104,var(--tw-text-opacity));
+    line-height:1em;
+    margin-bottom:.5rem;
+    margin-top:.5rem;
+    padding:.5rem 1rem;
+    width:70%
+   }
+
+.output {
+    --tw-border-opacity:1;
+    --tw-bg-opacity:1;
+    --tw-text-opacity:1;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background-color:rgba(237,242,247,var(--tw-bg-opacity));
+    border-color:rgba(226,232,240,var(--tw-border-opacity));
+    border-radius:.25rem;
+    border-width:1px;
+    color:rgba(74,85,104,var(--tw-text-opacity));
+    line-height:1em;
+    margin-bottom:.5rem;
+    margin-top:.5rem;
+    padding:.5rem 1rem;
+    width:70%
+}	
+  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HASV calculator</title>
+    
+<body>
+    <div>
+        <section class="bg-gray-100 pt-10 pb-20 print:hidden">
+            
+                <div class="clearfix -mx-3">
+                    <div class="md:float-left md:w-1/3 lg:w-1/2 p-3">
+                        <label class="text-xl" for="input-tool">Tool</label>
+                        <p class="input-help">What tool are you using?</p>
+                        <input id="input-tool" class="input" type="text" name="input" placeholder="e.g. Hammer drill" autocomplete="off" maxlength="200">
+                    </div>
+
+                    <div class="sm:float-left sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
+                        <label class="text-xl" for="input-output">Output (m/s2)</label>
+                        <p class="input-help">What vibration level?</p>
+                        <input id="input-output" class="input" type="number" name="input-output" autocomplete="off" value="10" min="0" maxlength="5" step="0.5">
+                    </div>
+
+                    <div class="sm:float-left sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
+                        <label class="text-xl" for="input-minutes">Minutes</label>
+                        <p class="input-help">How long will you use it?</p>
+                        <input class="input" id="input-output-time" type="number" name="input-minutes" value="30" autocomplete="0" min="0" maxlength="5">
+                    </div>
+                        <button id="myBtn"> Calculate</button>
+
+                        <div id="textbox_id">
+                            <label id="points">Points:</label><br>
+                            <label id="resultado">Result:</label><br>
+                            <label id="maxToWork">Max Hours to Work:</label><br>
+                        </div>                        
+                    </div>
+        
+                </div>
+            
+        </section>
+    </div>
+    
+</body>
+
+</html>
